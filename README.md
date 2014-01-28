@@ -1,15 +1,20 @@
+Uploader
+=============
+
+I got tired of explaining how I upload photos to my own domain in Tweetbot, so here's the stuff you need to set it up for yourself and the instructions to get it all working. Have fun.
+
 SETUP
 =============
 
-Step 1: Open the PHP file in a text editor
+Step 1: Open uploader.php in a text editor
 
 Step 2: Replace all instances of the word "FOLDER" with the name of the directory you want your images uploaded to. Example: "pic/" (keep the trailing slash)
 
 Step 3: Replace the one instance of "YOUR_DOMAIN_HERE" with your domain name.
 
-Step 4: Rename the PHP file and drop it in the root directory of your domain. Keep the name a secret or others will be able to upload to your server.
+Step 4: Rename uploader.php and drop it in the root directory of your domain. Keep the name a secret or others will be able to upload to your server.
 
-Step 5: Create a new directory inside root with the name you picked earlier (here it's "pic" with no trailing slash)
+Step 5: Create a new directory inside root with the name you picked earlier (here it's "pic," remember not to include trailing slash)
 
 Step 6: Set Tweetbot for Mac and iOS to use the custom photo and video upload option
 

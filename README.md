@@ -3,7 +3,12 @@ Uploader
 
 I got tired of explaining how I upload photos to my own domain in Tweetbot, so here's the stuff you need to set it up for yourself and the instructions to get it all working. Have fun.
 
-SETUP
+Support
+=============
+
+If this isn't working for you, sorry. Some people have problems with it. It works fine for me. Make sure your server has PHP enabled. If that doesn't work, you're just out of luck. I don't have the know-how or time to troubleshoot your server problems.
+
+Setup
 =============
 
 Step 1: Open uploader.php in a text editor
@@ -26,7 +31,7 @@ Now when you tweet an image or video from Tweetbot, it should automatically uplo
 My domain is mkbs.me, and my image directory is pic. My URLs look like this: http://mkbs.me/pic/T3Djn.png
 
 
-ADVANCED STUFF
+Advanced Stuff
 =============
 
 To change the number of characters in the new filename, find this line near the top:

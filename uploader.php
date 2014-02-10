@@ -10,7 +10,7 @@ foreach (array_rand($seed, 5) as $k) $rand .= $seed[$k];
 
 
 $directory_self = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']); 
-$uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . 'FOLDER/'; 
+$uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . '/'; 
 $useViewer = false;
 
 
@@ -25,7 +25,7 @@ if (in_array($mime_type, $mime_array)) {
         die("error");
 	} else {
 		$extension = end(explode(".", $_FILES["media"]["name"]));
-		$uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . 'FOLDER/'; 
+		$uploadsDirectory = $_SERVER['DOCUMENT_ROOT'] . $directory_self . '/'; 
 		$urlDisplayName = "";
 		if	(($mime_type=="video/mp4") || ($mime_type=="video/quicktime")) {
 			$id = uniqid();
@@ -41,7 +41,7 @@ if (in_array($mime_type, $mime_array)) {
 		} else {
 		  move_uploaded_file($_FILES["media"]["tmp_name"],
 		  $uploadsDirectory . $newFileName);
-		  $urlToReply = ("YOUR_DOMAIN_HERE/FOLDER/" . $newFileName);
+		  $urlToReply = ("YOUR_DOMAIN_HERE/" . $newFileName);
 		  echo (json_encode(array("url"=>$urlToReply)));
 		}
 	}
